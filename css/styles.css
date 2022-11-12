@@ -118,6 +118,10 @@ button {
 .link-address:focus {
   color: var(--accent-color);
 }
+.header-section-address-logo:hover,
+.header-section-address-logo:focus {
+  color: var(--accent-color);
+}
 
 /* Page header */
 
