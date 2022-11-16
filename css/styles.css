@@ -152,13 +152,16 @@ button {
 
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-image: url(../images/hero.jpg);
+  background-image: url(../images/hero.jpg),
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding: 200px 0;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 .hero-title {
   color: var(--maket-color);
@@ -231,12 +234,12 @@ button {
   background-color: #f5f4fa;
   width: 270px;
   height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 .icon-advantages {
-  margin: 100 25;
-  align-items: center;
-  justify-items: center;
-  background-position: center;
 }
 /* Title secondary-Our works*/
 
@@ -325,24 +328,24 @@ button {
   border-radius: 50%;
   background-color: var(--maket-color);
   color: #afb1b8;
-  fill: currentColor;
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
-}
-.social-icon {
-  color: #afb1b8;
-}
-.social-icon:hover,
-.social-icon:focus {
   color: var(--maket-color);
 }
+.social-icon {
+  fill: currentColor;
+}
+
 /*Section Our clients*/
 .container {
   margin-top: 0;
   margin-bottom: 0;
+}
+.section-our-clients {
+  margin: 94px auto;
 }
 .section-title-our-clients {
   font-weight: 700;
@@ -351,13 +354,11 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .clients {
   display: flex;
   gap: 30px;
-  justify-items: center;
 }
 
 .client-link {
@@ -368,16 +369,11 @@ button {
   height: 92px;
   border-radius: 4%;
   color: #f5f5f5;
-  border: solid #afb1b8 1px;
-  margin-bottom: 94px;
+  border: solid currentColor 1px;
   fill: #afb1b8;
 }
-.client-item:hover,
-.client-item:focus {
-  color: var(--accent-color);
-}
-.clients:hover,
-.clients:focus {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-color);
 }
 
@@ -385,19 +381,18 @@ button {
   width: 170px;
   height: 92px;
 }
-.client-link:hover,
-.client-link:focus {
-  color: var(--accent-color);
-}
+
 .client-icon:hover,
 .client-icon:focus {
-  color: var(--accent-color);
+  fill: currentColor;
 }
 /*Section footer*/
 
 .section-works-footer {
   background: #2f303a;
   padding: 60px 0;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .address-item:not(:last-child) {
